@@ -1,0 +1,20 @@
+{
+  "name": "@adeattwood/raw-turbo-streams",
+  "version": "1.0.0",
+  "main": "src/server.js",
+  "type": "module",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "express": "^4.21.1",
+    "liquidjs": "^10.18.0",
+    "uuid": "^11.0.2"
+  },
+  "devDependencies": {
+    "@hotwired/turbo": "^8.0.12"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "postinstall": "cp node_modules/@hotwired/turbo/dist/turbo.es2017-esm.js public/lib"
+  }
+}

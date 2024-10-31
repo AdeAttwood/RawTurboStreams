@@ -1,0 +1,17 @@
+{% layout "layout" %}
+
+{% block header %}
+  <title>Basic to do app</title>
+  <meta name="description" content="A basic to do app using turbo streams" />
+{% endblock %}
+
+{% block content %}
+  <h1>Tasks</h1>
+
+  <div id="task-form">
+    {% include 'partials/task-form' %}
+  </div>
+
+  {% include 'partials/task-list' %}
+
+{% endblock %}
